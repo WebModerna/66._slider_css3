@@ -1,0 +1,111 @@
+/* Mi propio slider hecho sólo con CSS */
+
+// Normalizando 
+@import 'normalize'
+
+// Fuentes e íconos
+@import '20._fuentes'
+@import '21._iconos'
+
+// Generales y utilidades
+@import "01._variables"
+@import "02._paleta_de_colores"
+@import "03._funciones"
+
+// El contenedor
+.slider
+	&__cuerpo
+		box-sizing border-box
+		margin 0
+		
+	
+	&__contenedor
+		box-sizing border-box
+		margin 0
+		position relative
+		
+	
+	&__item
+		animation-delay 0
+		animation-duration 16s
+		animation-step 16
+		animation-iteration-count infinite
+		animation-direction alternate
+		animation-timing-function ease-in-out
+		animation-fill-mode backwards
+		background-color #fff
+		background-position 50% 50%
+		background-repeat no-repeat
+		background-size cover
+		box-sizing border-box
+		height 100vh
+		left 0
+		opacity 0
+		position absolute
+		top 0
+		width 100vw
+
+#slider__item
+	&_1
+		animation-name slidering_1
+		background-image url("../img/img1.jpg")
+
+	&_2
+		animation-name slidering_2
+		background-image url("../img/img2.jpg")
+
+	&_3
+		animation-name slidering_3
+		background-image url("../img/img3.jpg")
+
+	&_4
+		animation-name slidering_4
+		background-image url("../img/img4.jpg")
+
+// Variables
+$keyframe_nombre_1 = slidering_1
+$keyframe_nombre_2 = slidering_2
+$keyframe_nombre_3 = slidering_3
+$keyframe_nombre_4 = slidering_4
+
+
+// Los fotogramas
+@keyframes {$keyframe_nombre_1}
+	0%
+		opacity 0
+		
+	6.25%
+		opacity 1
+
+	93.75%, 100%
+		opacity 1
+
+@keyframes {$keyframe_nombre_2}
+	0%, 25%
+		opacity 0
+		
+	31.25%
+		opacity 1
+
+	68.75%, 100%
+		opacity 1
+
+@keyframes {$keyframe_nombre_3}
+	0%, 50%
+		opacity 0
+		
+	56.25%
+		opacity 1
+
+	62.5%, 100%
+		opacity 1
+
+@keyframes {$keyframe_nombre_4}
+	0%, 75%
+		opacity 0
+		
+	81.25%
+		opacity 1
+
+	87.5%, 100%
+		opacity 1
