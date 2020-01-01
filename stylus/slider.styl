@@ -3,9 +3,10 @@
 // Normalizando 
 @import 'normalize'
 
+$items = 4
 $tiempo_mostrar = 3
-$cantidad_segundos = 16
-$items = $cantidad_segundos / $tiempo_mostrar
+
+$tiempo_total = (($tiempo_mostrar + 1) * $items)
 
 // El contenedor
 .slider
@@ -55,32 +56,33 @@ $items = $cantidad_segundos / $tiempo_mostrar
 
 #slider__item
 	&_1
-		animation-name fadeing_1
 		background-image url("../img/img1.jpg")
 
 	&_2
-		animation-name fadeing_2
 		background-image url("../img/img2.jpg")
 
 	&_3
-		animation-name fadeing_3
 		background-image url("../img/img3.jpg")
 
 	&_4
-		animation-name fadeing_4
 		background-image url("../img/img4.jpg")
 
-// Variables
-
-
-$keyframe_nombre_1 = fadeing_1
-$keyframe_nombre_2 = fadeing_2
-$keyframe_nombre_3 = fadeing_3
-$keyframe_nombre_4 = fadeing_4
+// Bucle: crea los fotogramas
+for $i in 1..$items
+	#slider__item_{$i}
+		animation-name fadeing_ + $i
+/*	
+	@keyframes fadeing_{$i}
+		percentage($faseA), percentage($faseB)
+			opacity 1
+		percentage($faseC), percentage($faseD)
+			opacity 0
+		percentage($faseE), percentage($faseF)
+			opacity 1*/
 
 
 // Los fotogramas
-@keyframes {$keyframe_nombre_1}
+@keyframes {fadeing_1}
 	0%, 18.75%
 		opacity 1
 		
@@ -90,7 +92,7 @@ $keyframe_nombre_4 = fadeing_4
 	100%
 		opacity 1
 
-@keyframes {$keyframe_nombre_2}
+@keyframes {fadeing_2}
 	0%, 18.75%
 		opacity 0
 		
@@ -100,7 +102,7 @@ $keyframe_nombre_4 = fadeing_4
 	50%, 100%
 		opacity 0
 
-@keyframes {$keyframe_nombre_3}
+@keyframes {fadeing_3}
 	0%, 43.75%
 		opacity 0
 		
@@ -110,7 +112,7 @@ $keyframe_nombre_4 = fadeing_4
 	75%, 100%
 		opacity 0
 
-@keyframes {$keyframe_nombre_4}
+@keyframes {fadeing_4}
 	0%, 68.75%
 		opacity 0
 		

@@ -271,7 +271,7 @@ table {
 }
 .slider__item {
   animation-delay: 0;
-  animation-duration: 16s;
+  animation-duration: $cantidad_segundos s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   background-color: #fff;
@@ -287,21 +287,37 @@ table {
   width: 100vw;
 }
 #slider__item_1 {
-  animation-name: fadeing_1;
   background-image: url("../img/img1.jpg");
 }
 #slider__item_2 {
-  animation-name: fadeing_2;
   background-image: url("../img/img2.jpg");
 }
 #slider__item_3 {
-  animation-name: fadeing_3;
   background-image: url("../img/img3.jpg");
 }
 #slider__item_4 {
-  animation-name: fadeing_4;
   background-image: url("../img/img4.jpg");
 }
+#slider__item_1 {
+  animation-name: fadeing_1;
+}
+#slider__item_2 {
+  animation-name: fadeing_2;
+}
+#slider__item_3 {
+  animation-name: fadeing_3;
+}
+#slider__item_4 {
+  animation-name: fadeing_4;
+}
+/*	
+	@keyframes fadeing_{$i}
+		percentage($faseA), percentage($faseB)
+			opacity 1
+		percentage($faseC), percentage($faseD)
+			opacity 0
+		percentage($faseE), percentage($faseF)
+			opacity 1*/
 @-moz-keyframes fadeing_1 {
   0%, 18.75% {
     opacity: 1;
