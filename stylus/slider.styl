@@ -2,6 +2,7 @@
 
 // Normalizando 
 @import 'normalize'
+@import 'funciones'
 
 $items = 4
 $tiempo_mostrar = 3
@@ -17,6 +18,7 @@ $tiempo_total = (($tiempo_mostrar + 1) * $items)
 	
 	&__contenedor
 		box-sizing border-box
+		vertical-align middle
 		margin 0
 		position relative
 	
@@ -26,27 +28,36 @@ $tiempo_total = (($tiempo_mostrar + 1) * $items)
 		color #fff
 		font-size 20px
 		font-style italic
-		display inline-block
+		display table-cell
 		line-height 40px
 		// Posicionando la leyenda siempre en el centro
-		position absolute
-		top 50%
-		left 50%
-		width w = 150px
+		padding 0.5em 1em
+		position relative
+		// top 50%
+		// left 50%
+		/*width w = 150px
 		height h = 40px
 		margin-left -(w / 2)
 		margin-top -(h / 2)
+*/		
+		&:before
+			content ''
+			position absolute
+			right 0
+			top 0
+			triangle(15px, 15px, bottomLeft, pink)
 	
 	&__item
 		animation-delay 0
-		animation-duration $cantidad_segundos s
+		animation-duration $tiempo_total s
 		animation-iteration-count infinite
 		animation-timing-function ease-in
 		background-color #fff
-		background-position 50% 50%
+		background-position middle center
 		background-repeat no-repeat
-		background-size cover
+		background-size(cover)
 		box-sizing border-box
+		display table-row
 		height 100vh
 		left 0
 		opacity 0
@@ -54,22 +65,13 @@ $tiempo_total = (($tiempo_mostrar + 1) * $items)
 		top 0
 		width 100vw
 
-#slider__item
-	&_1
-		background-image url("../img/img1.jpg")
-
-	&_2
-		background-image url("../img/img2.jpg")
-
-	&_3
-		background-image url("../img/img3.jpg")
-
-	&_4
-		background-image url("../img/img4.jpg")
-
-// Bucle: crea los fotogramas
+// Bucle: crea los nombres de las animaciones
 for $i in 1..$items
 	#slider__item_{$i}
+		// Por fórmula coloca una imagen previamente numerada
+		background-image url('../img/img' + ($i) + '.jpg')
+		
+		// El nombre de la animación numerada
 		animation-name fadeing_ + $i
 /*	
 	@keyframes fadeing_{$i}
