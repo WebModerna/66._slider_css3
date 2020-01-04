@@ -47,6 +47,16 @@ triangle(width = 10px, height = 10px, direction = 'bottom', color = #000)
 	// Mixin styles for passed direction
 	styles = directions[direction]
 	{styles}
+	
+
+/******* Los Fotogramas ********/
+elFotograma(nombre, orden, estadoInicial, estadoFinal)
+	// Etapas básicas
+	etapas = {
+	}
+	
+	fases = etapas[etapa]
+	{fases}
 
 
 /*************************************** Otras generales */
@@ -89,3 +99,46 @@ white-space_pre-wrap()
 @media all and (min-width: 900px)
 	.separador
 		margin 0.65em 0
+
+
+/*
+@keyframes {fadeing_1}
+	0%, 18.75%
+		opacity 1
+		
+	25%, 93.75%
+		opacity 0
+	
+	100%
+		opacity 1
+
+@keyframes {fadeing_2}
+	0%, 18.75%
+		opacity 0
+		
+	25%, 43.75%
+		opacity 1
+
+	50%, 100%
+		opacity 0
+
+@keyframes {fadeing_3}
+	0%, 43.75%
+		opacity 0
+		
+	50%, 68.75%
+		opacity 1
+
+	75%, 100%
+		opacity 0
+
+@keyframes {fadeing_4}
+	0%, 68.75%
+		opacity 0
+		
+	75%, 93.75%
+		opacity 1
+
+	100%
+		opacity 0
+*/

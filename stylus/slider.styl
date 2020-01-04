@@ -1,125 +1,104 @@
-/* Mi propio slider hecho sólo con CSS */
+// Mi propio slider hecho sólo con CSS
 
 // Normalizando 
 @import 'normalize'
 @import 'funciones'
 
 $items = 4
-$tiempo_mostrar = 3
+$tiempo_mostrar = 4
+$tiempo_total = $tiempo_mostrar * $items
 
-$tiempo_total = (($tiempo_mostrar + 1) * $items)
 
 // El contenedor
 .slider
 	&__cuerpo
 		box-sizing border-box
 		margin 0
-		text-align center
+		overflow hidden
+		height 100vh
+		width 100vw
 	
 	&__contenedor
 		box-sizing border-box
-		vertical-align middle
 		margin 0
 		position relative
+		display flex
 	
 	&__leyenda
-		background rgba(5,5,5,0.5)
-		border 1px solid pink
-		color #fff
-		font-size 20px
-		font-style italic
-		display table-cell
-		line-height 40px
-		// Posicionando la leyenda siempre en el centro
-		padding 0.5em 1em
-		position relative
-		// top 50%
-		// left 50%
-		/*width w = 150px
-		height h = 40px
-		margin-left -(w / 2)
-		margin-top -(h / 2)
-*/		
-		&:before
-			content ''
-			position absolute
-			right 0
-			top 0
-			triangle(15px, 15px, bottomLeft, pink)
+		display flex
+		justify-content center
+		align-items center
+		height 100vh
+
+		&__contenido
+			background rgba(5,5,5,0.5)
+			border 1px solid pink
+			color pink
+			font-size 20px
+			font-weight bold
+			font-style italic
+			line-height 40px
+			// Posicionando la leyenda siempre en el centro
+			padding 0.5em 1em
+			position relative
+			// top 50%
+			// left 50%
+			/*width w = 150px
+			height h = 40px
+			margin-left -(w / 2)
+			margin-top -(h / 2)
+	*/		
+			&:before
+				content ''
+				position absolute
+				right 0
+				top 0
+				triangle(15px, 15px, bottomLeft, pink)
 	
 	&__item
 		animation-delay 0
 		animation-duration $tiempo_total s
 		animation-iteration-count infinite
-		animation-timing-function ease-in
+		animation-timing-function ease-in-out
 		background-color #fff
-		background-position middle center
+		background-position 50% 50%
 		background-repeat no-repeat
 		background-size(cover)
 		box-sizing border-box
-		display table-row
+		display table
 		height 100vh
 		left 0
 		opacity 0
 		position absolute
+		text-align center
 		top 0
 		width 100vw
 
 // Bucle: crea los nombres de las animaciones
 for $i in 1..$items
 	#slider__item_{$i}
-		// Por fórmula coloca una imagen previamente numerada
+		/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
+		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+		*/
 		background-image url('../img/img' + ($i) + '.jpg')
 		
 		// El nombre de la animación numerada
 		animation-name fadeing_ + $i
-/*	
-	@keyframes fadeing_{$i}
-		percentage($faseA), percentage($faseB)
-			opacity 1
-		percentage($faseC), percentage($faseD)
-			opacity 0
-		percentage($faseE), percentage($faseF)
-			opacity 1*/
-
-
-// Los fotogramas
-@keyframes {fadeing_1}
-	0%, 18.75%
-		opacity 1
-		
-	25%, 93.75%
-		opacity 0
 	
-	100%
-		opacity 1
+	// En base al orden de cada una de las imágenes
 
-@keyframes {fadeing_2}
-	0%, 18.75%
-		opacity 0
-		
-	25%, 43.75%
-		opacity 1
+	@keyframes { fadeing_ + $i }
+		for a in 0..$tiempo_total
+			if a <= $i * $tiempo_mostrar && a > $i * $tiempo_mostrar - $tiempo_mostrar
+				{ 100% * a / $tiempo_total }
+					opacity 1
+			else if a == 0 && $i == 1
+				{ 100% * a / $tiempo_total }
+					opacity 1
+			else if a == $tiempo_total && $i == $items
+				{ 100% }
+					opacity 0 !important
+			else
+				{ 100% * a / $tiempo_total }
+					opacity 0
 
-	50%, 100%
-		opacity 0
-
-@keyframes {fadeing_3}
-	0%, 43.75%
-		opacity 0
-		
-	50%, 68.75%
-		opacity 1
-
-	75%, 100%
-		opacity 0
-
-@keyframes {fadeing_4}
-	0%, 68.75%
-		opacity 0
-		
-	75%, 93.75%
-		opacity 1
-
-	100%
-		opacity 0

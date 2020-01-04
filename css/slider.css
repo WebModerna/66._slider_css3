@@ -1,4 +1,3 @@
-/* Mi propio slider hecho sólo con CSS */
 article,
 aside,
 details,
@@ -255,31 +254,39 @@ table {
 .slider__cuerpo {
   box-sizing: border-box;
   margin: 0;
-  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 .slider__contenedor {
   box-sizing: border-box;
-  vertical-align: middle;
   margin: 0;
   position: relative;
+  display: flex;
 }
 .slider__leyenda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.slider__leyenda__contenido {
   background: rgba(5,5,5,0.5);
   border: 1px solid #ffc0cb;
-  color: #fff;
+  color: #ffc0cb;
   font-size: 20px;
+  font-weight: bold;
   font-style: italic;
-  display: table-cell;
   line-height: 40px;
   padding: 0.5em 1em;
   position: relative;
 /*width w = 150px
-		height h = 40px
-		margin-left -(w / 2)
-		margin-top -(h / 2)
-*/
+			height h = 40px
+			margin-left -(w / 2)
+			margin-top -(h / 2)
+	*/
 }
-.slider__leyenda:before {
+.slider__leyenda__contenido:before {
   content: '';
   position: absolute;
   right: 0;
@@ -295,9 +302,9 @@ table {
   animation-delay: 0;
   animation-duration: 16s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   background-color: #fff;
-  background-position: middle center;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   -o-background-size: cover;
@@ -305,212 +312,889 @@ table {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   box-sizing: border-box;
-  display: table-row;
+  display: table;
   height: 100vh;
   left: 0;
   opacity: 0;
   position: absolute;
+  text-align: center;
   top: 0;
   width: 100vw;
 }
 #slider__item_1 {
+/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
+		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+		*/
   background-image: url("../img/img1.jpg");
   animation-name: fadeing_1;
 }
-#slider__item_2 {
-  background-image: url("../img/img2.jpg");
-  animation-name: fadeing_2;
-}
-#slider__item_3 {
-  background-image: url("../img/img3.jpg");
-  animation-name: fadeing_3;
-}
-#slider__item_4 {
-  background-image: url("../img/img4.jpg");
-  animation-name: fadeing_4;
-}
-/*	
-	@keyframes fadeing_{$i}
-		percentage($faseA), percentage($faseB)
-			opacity 1
-		percentage($faseC), percentage($faseD)
-			opacity 0
-		percentage($faseE), percentage($faseF)
-			opacity 1*/
 @-moz-keyframes fadeing_1 {
-  0%, 18.75% {
+  0% {
     opacity: 1;
   }
-  25%, 93.75% {
+  6.25% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.75% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @-webkit-keyframes fadeing_1 {
-  0%, 18.75% {
+  0% {
     opacity: 1;
   }
-  25%, 93.75% {
+  6.25% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.75% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @-o-keyframes fadeing_1 {
-  0%, 18.75% {
+  0% {
     opacity: 1;
   }
-  25%, 93.75% {
+  6.25% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.75% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes fadeing_1 {
-  0%, 18.75% {
+  0% {
     opacity: 1;
   }
-  25%, 93.75% {
+  6.25% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  18.75% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeing_2 {
-  0%, 18.75% {
     opacity: 0;
   }
-  25%, 43.75% {
+}
+#slider__item_2 {
+/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
+		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+		*/
+  background-image: url("../img/img2.jpg");
+  animation-name: fadeing_2;
+}
+@-moz-keyframes fadeing_2 {
+  0% {
+    opacity: 0;
+  }
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
     opacity: 1;
   }
-  50%, 100% {
+  37.5% {
+    opacity: 1;
+  }
+  43.75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @-webkit-keyframes fadeing_2 {
-  0%, 18.75% {
+  0% {
     opacity: 0;
   }
-  25%, 43.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
     opacity: 1;
   }
-  50%, 100% {
+  37.5% {
+    opacity: 1;
+  }
+  43.75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @-o-keyframes fadeing_2 {
-  0%, 18.75% {
+  0% {
     opacity: 0;
   }
-  25%, 43.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
     opacity: 1;
   }
-  50%, 100% {
+  37.5% {
+    opacity: 1;
+  }
+  43.75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @keyframes fadeing_2 {
-  0%, 18.75% {
+  0% {
     opacity: 0;
   }
-  25%, 43.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
     opacity: 1;
   }
-  50%, 100% {
+  37.5% {
+    opacity: 1;
+  }
+  43.75% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
+#slider__item_3 {
+/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
+		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+		*/
+  background-image: url("../img/img3.jpg");
+  animation-name: fadeing_3;
+}
 @-moz-keyframes fadeing_3 {
-  0%, 43.75% {
+  0% {
     opacity: 0;
   }
-  50%, 68.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
     opacity: 1;
   }
-  75%, 100% {
+  62.5% {
+    opacity: 1;
+  }
+  68.75% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @-webkit-keyframes fadeing_3 {
-  0%, 43.75% {
+  0% {
     opacity: 0;
   }
-  50%, 68.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
     opacity: 1;
   }
-  75%, 100% {
+  62.5% {
+    opacity: 1;
+  }
+  68.75% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @-o-keyframes fadeing_3 {
-  0%, 43.75% {
+  0% {
     opacity: 0;
   }
-  50%, 68.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
     opacity: 1;
   }
-  75%, 100% {
+  62.5% {
+    opacity: 1;
+  }
+  68.75% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
   }
 }
 @keyframes fadeing_3 {
-  0%, 43.75% {
+  0% {
     opacity: 0;
   }
-  50%, 68.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
     opacity: 1;
   }
-  75%, 100% {
-    opacity: 0;
-  }
-}
-@-moz-keyframes fadeing_4 {
-  0%, 68.75% {
-    opacity: 0;
-  }
-  75%, 93.75% {
+  62.5% {
     opacity: 1;
+  }
+  68.75% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  81.25% {
+    opacity: 0;
+  }
+  87.5% {
+    opacity: 0;
+  }
+  93.75% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
+  }
+}
+#slider__item_4 {
+/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
+		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+		*/
+  background-image: url("../img/img4.jpg");
+  animation-name: fadeing_4;
+}
+@-moz-keyframes fadeing_4 {
+  0% {
+    opacity: 0;
+  }
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  93.75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @-webkit-keyframes fadeing_4 {
-  0%, 68.75% {
+  0% {
     opacity: 0;
   }
-  75%, 93.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  93.75% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-o-keyframes fadeing_4 {
-  0%, 68.75% {
+  0% {
     opacity: 0;
   }
-  75%, 93.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  93.75% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes fadeing_4 {
-  0%, 68.75% {
+  0% {
     opacity: 0;
   }
-  75%, 93.75% {
+  6.25% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  18.75% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  31.25% {
+    opacity: 0;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  56.25% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  68.75% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  81.25% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  93.75% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=slider.css.map */
