@@ -8,7 +8,7 @@
 $items = 6
 
 // El tiempo en el cual una imagen se mostrará
-$tiempo_mostrar = 1
+$tiempo_mostrar = 3
 
 // El tiempo total de todas las animaciones conjunto
 $tiempo_total = $tiempo_mostrar * $items
@@ -52,13 +52,13 @@ $tiempo_total = $tiempo_mostrar * $items
 			height h = 40px
 			margin-left -(w / 2)
 			margin-top -(h / 2)
-	*/		
 			&:before
 				content ''
 				position absolute
 				right 0
 				top 0
 				triangle(15px, 15px, bottomLeft, pink)
+	*/		
 	
 	&__item
 		animation-delay 0

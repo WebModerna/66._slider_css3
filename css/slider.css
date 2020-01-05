@@ -284,23 +284,17 @@ table {
 			height h = 40px
 			margin-left -(w / 2)
 			margin-top -(h / 2)
+			&:before
+				content ''
+				position absolute
+				right 0
+				top 0
+				triangle(15px, 15px, bottomLeft, pink)
 	*/
-}
-.slider__leyenda__contenido:before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0;
-  height: 0;
-  background: 0;
-  border-style: solid;
-  border-width: 15px 0 0 15px;
-  border-color: transparent transparent transparent #ffc0cb;
 }
 .slider__item {
   animation-delay: 0;
-  animation-duration: 6s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   background-color: #fff;
@@ -336,19 +330,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 1;
   }
+  5.555555555555555% {
+    opacity: 1;
+  }
+  11.11111111111111% {
+    opacity: 1;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -359,19 +389,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 1;
   }
+  5.555555555555555% {
+    opacity: 1;
+  }
+  11.11111111111111% {
+    opacity: 1;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -382,19 +448,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 1;
   }
+  5.555555555555555% {
+    opacity: 1;
+  }
+  11.11111111111111% {
+    opacity: 1;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -405,19 +507,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 1;
   }
+  5.555555555555555% {
+    opacity: 1;
+  }
+  11.11111111111111% {
+    opacity: 1;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -432,19 +570,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 1;
+  }
+  22.22222222222222% {
+    opacity: 1;
+  }
+  27.77777777777778% {
     opacity: 1;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -455,19 +629,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 1;
+  }
+  22.22222222222222% {
+    opacity: 1;
+  }
+  27.77777777777778% {
     opacity: 1;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -478,19 +688,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 1;
+  }
+  22.22222222222222% {
+    opacity: 1;
+  }
+  27.77777777777778% {
     opacity: 1;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -501,19 +747,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 1;
+  }
+  22.22222222222222% {
+    opacity: 1;
+  }
+  27.77777777777778% {
     opacity: 1;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -528,19 +810,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 1;
   }
+  38.888888888888886% {
+    opacity: 1;
+  }
+  44.44444444444444% {
+    opacity: 1;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -551,19 +869,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 1;
   }
+  38.888888888888886% {
+    opacity: 1;
+  }
+  44.44444444444444% {
+    opacity: 1;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -574,19 +928,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 1;
   }
+  38.888888888888886% {
+    opacity: 1;
+  }
+  44.44444444444444% {
+    opacity: 1;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -597,19 +987,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 1;
   }
+  38.888888888888886% {
+    opacity: 1;
+  }
+  44.44444444444444% {
+    opacity: 1;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -624,19 +1050,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 1;
+  }
+  55.55555555555556% {
+    opacity: 1;
+  }
+  61.111111111111114% {
     opacity: 1;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -647,19 +1109,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 1;
+  }
+  55.55555555555556% {
+    opacity: 1;
+  }
+  61.111111111111114% {
     opacity: 1;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -670,19 +1168,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 1;
+  }
+  55.55555555555556% {
+    opacity: 1;
+  }
+  61.111111111111114% {
     opacity: 1;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -693,19 +1227,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 1;
+  }
+  55.55555555555556% {
+    opacity: 1;
+  }
+  61.111111111111114% {
     opacity: 1;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -720,19 +1290,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 1;
   }
+  72.22222222222223% {
+    opacity: 1;
+  }
+  77.77777777777777% {
+    opacity: 1;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -743,19 +1349,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 1;
   }
+  72.22222222222223% {
+    opacity: 1;
+  }
+  77.77777777777777% {
+    opacity: 1;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -766,19 +1408,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 1;
   }
+  72.22222222222223% {
+    opacity: 1;
+  }
+  77.77777777777777% {
+    opacity: 1;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -789,19 +1467,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 1;
   }
+  72.22222222222223% {
+    opacity: 1;
+  }
+  77.77777777777777% {
+    opacity: 1;
+  }
   83.33333333333333% {
+    opacity: 0;
+  }
+  88.88888888888889% {
+    opacity: 0;
+  }
+  94.44444444444444% {
     opacity: 0;
   }
   100% {
@@ -816,19 +1530,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 1;
+  }
+  88.88888888888889% {
+    opacity: 1;
+  }
+  94.44444444444444% {
     opacity: 1;
   }
   100% {
@@ -839,19 +1589,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 1;
+  }
+  88.88888888888889% {
+    opacity: 1;
+  }
+  94.44444444444444% {
     opacity: 1;
   }
   100% {
@@ -862,19 +1648,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 1;
+  }
+  88.88888888888889% {
+    opacity: 1;
+  }
+  94.44444444444444% {
     opacity: 1;
   }
   100% {
@@ -885,19 +1707,55 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   0% {
     opacity: 0;
   }
+  5.555555555555555% {
+    opacity: 0;
+  }
+  11.11111111111111% {
+    opacity: 0;
+  }
   16.666666666666668% {
+    opacity: 0;
+  }
+  22.22222222222222% {
+    opacity: 0;
+  }
+  27.77777777777778% {
     opacity: 0;
   }
   33.333333333333336% {
     opacity: 0;
   }
+  38.888888888888886% {
+    opacity: 0;
+  }
+  44.44444444444444% {
+    opacity: 0;
+  }
   50% {
+    opacity: 0;
+  }
+  55.55555555555556% {
+    opacity: 0;
+  }
+  61.111111111111114% {
     opacity: 0;
   }
   66.66666666666667% {
     opacity: 0;
   }
+  72.22222222222223% {
+    opacity: 0;
+  }
+  77.77777777777777% {
+    opacity: 0;
+  }
   83.33333333333333% {
+    opacity: 1;
+  }
+  88.88888888888889% {
+    opacity: 1;
+  }
+  94.44444444444444% {
     opacity: 1;
   }
   100% {
