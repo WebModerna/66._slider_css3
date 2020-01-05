@@ -4,8 +4,13 @@
 @import 'normalize'
 @import 'funciones'
 
-$items = 4
-$tiempo_mostrar = 4
+// La cantidad de imágenes a mostrar
+$items = 6
+
+// El tiempo en el cual una imagen se mostrará
+$tiempo_mostrar = 1
+
+// El tiempo total de todas las animaciones conjunto
 $tiempo_total = $tiempo_mostrar * $items
 
 
@@ -74,30 +79,34 @@ $tiempo_total = $tiempo_mostrar * $items
 		top 0
 		width 100vw
 
-// Bucle: crea los nombres de las animaciones
+/*
+=========================================
+Bucle: crea los nombres de las animaciones
+Por fórmula coloca una imagen previamente numerada en la carpeta /img
+Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+========================================
+*/
 for $i in 1..$items
 	#slider__item_{$i}
-		/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
-		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-		*/
 		background-image url('../img/img' + ($i) + '.jpg')
 		
 		// El nombre de la animación numerada
 		animation-name fadeing_ + $i
 	
 	// En base al orden de cada una de las imágenes
-
 	@keyframes { fadeing_ + $i }
 		for a in 0..$tiempo_total
-			if a <= $i * $tiempo_mostrar && a > $i * $tiempo_mostrar - $tiempo_mostrar
+			// Para ir creando segmentos de tiempo en los cuales deben mostrarse.
+			if a < $i * $tiempo_mostrar && a >= $i * $tiempo_mostrar - $tiempo_mostrar
 				{ 100% * a / $tiempo_total }
 					opacity 1
-			else if a == 0 && $i == 1
+			
+			// El primer slider en el último fotograma lo tenemos que mostrar, de lo contrario hay un parpadeo cuando el bucle comienza.
+			else if a == $tiempo_total && $i == 1
 				{ 100% * a / $tiempo_total }
 					opacity 1
-			else if a == $tiempo_total && $i == $items
-				{ 100% }
-					opacity 0 !important
+			
+			// Se ocultan los slider en los fotogramas que están fuera del segmento asignado
 			else
 				{ 100% * a / $tiempo_total }
 					opacity 0

@@ -300,7 +300,7 @@ table {
 }
 .slider__item {
   animation-delay: 0;
-  animation-duration: 16s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   background-color: #fff;
@@ -321,10 +321,14 @@ table {
   top: 0;
   width: 100vw;
 }
+/*
+=========================================
+Bucle: crea los nombres de las animaciones
+Por fórmula coloca una imagen previamente numerada en la carpeta /img
+Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
+========================================
+*/
 #slider__item_1 {
-/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
-		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-		*/
   background-image: url("../img/img1.jpg");
   animation-name: fadeing_1;
 }
@@ -332,218 +336,95 @@ table {
   0% {
     opacity: 1;
   }
-  6.25% {
-    opacity: 1;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  18.75% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-webkit-keyframes fadeing_1 {
   0% {
     opacity: 1;
   }
-  6.25% {
-    opacity: 1;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  18.75% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-o-keyframes fadeing_1 {
   0% {
     opacity: 1;
   }
-  6.25% {
-    opacity: 1;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  18.75% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes fadeing_1 {
   0% {
     opacity: 1;
   }
-  6.25% {
-    opacity: 1;
-  }
-  12.5% {
-    opacity: 1;
-  }
-  18.75% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 #slider__item_2 {
-/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
-		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-		*/
   background-image: url("../img/img2.jpg");
   animation-name: fadeing_2;
 }
@@ -551,49 +432,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 1;
   }
-  37.5% {
-    opacity: 1;
-  }
-  43.75% {
-    opacity: 1;
+  33.333333333333336% {
+    opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-  56.25% {
     opacity: 0;
   }
-  62.5% {
+  66.66666666666667% {
     opacity: 0;
   }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -604,49 +455,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 1;
   }
-  37.5% {
-    opacity: 1;
-  }
-  43.75% {
-    opacity: 1;
+  33.333333333333336% {
+    opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-  56.25% {
     opacity: 0;
   }
-  62.5% {
+  66.66666666666667% {
     opacity: 0;
   }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -657,49 +478,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 1;
   }
-  37.5% {
-    opacity: 1;
-  }
-  43.75% {
-    opacity: 1;
+  33.333333333333336% {
+    opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-  56.25% {
     opacity: 0;
   }
-  62.5% {
+  66.66666666666667% {
     opacity: 0;
   }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -710,49 +501,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
-    opacity: 0;
-  }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
+  16.666666666666668% {
     opacity: 1;
   }
-  37.5% {
-    opacity: 1;
-  }
-  43.75% {
-    opacity: 1;
+  33.333333333333336% {
+    opacity: 0;
   }
   50% {
-    opacity: 1;
-  }
-  56.25% {
     opacity: 0;
   }
-  62.5% {
+  66.66666666666667% {
     opacity: 0;
   }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
-    opacity: 0;
-  }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -760,9 +521,6 @@ table {
   }
 }
 #slider__item_3 {
-/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
-		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-		*/
   background-image: url("../img/img3.jpg");
   animation-name: fadeing_3;
 }
@@ -770,49 +528,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
-    opacity: 0;
+  33.333333333333336% {
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 1;
-  }
-  68.75% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  81.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -823,49 +551,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
-    opacity: 0;
+  33.333333333333336% {
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 1;
-  }
-  68.75% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  81.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -876,49 +574,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
-    opacity: 0;
+  33.333333333333336% {
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 1;
-  }
-  68.75% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  81.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -929,49 +597,19 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
-    opacity: 0;
+  33.333333333333336% {
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
-    opacity: 1;
-  }
-  62.5% {
-    opacity: 1;
-  }
-  68.75% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  81.25% {
+  66.66666666666667% {
     opacity: 0;
   }
-  87.5% {
-    opacity: 0;
-  }
-  93.75% {
+  83.33333333333333% {
     opacity: 0;
   }
   100% {
@@ -979,9 +617,6 @@ table {
   }
 }
 #slider__item_4 {
-/* Por fórmula coloca una imagen previamente numerada en la carpeta /img
-		Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-		*/
   background-image: url("../img/img4.jpg");
   animation-name: fadeing_4;
 }
@@ -989,212 +624,284 @@ table {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
-    opacity: 0;
-  }
-  56.25% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
     opacity: 1;
   }
-  87.5% {
-    opacity: 1;
+  66.66666666666667% {
+    opacity: 0;
   }
-  93.75% {
-    opacity: 1;
+  83.33333333333333% {
+    opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @-webkit-keyframes fadeing_4 {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
-    opacity: 0;
-  }
-  56.25% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
     opacity: 1;
   }
-  87.5% {
-    opacity: 1;
+  66.66666666666667% {
+    opacity: 0;
   }
-  93.75% {
-    opacity: 1;
+  83.33333333333333% {
+    opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @-o-keyframes fadeing_4 {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
-    opacity: 0;
-  }
-  18.75% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  31.25% {
-    opacity: 0;
-  }
-  37.5% {
-    opacity: 0;
-  }
-  43.75% {
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
-    opacity: 0;
-  }
-  56.25% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
     opacity: 1;
   }
-  87.5% {
-    opacity: 1;
+  66.66666666666667% {
+    opacity: 0;
   }
-  93.75% {
-    opacity: 1;
+  83.33333333333333% {
+    opacity: 0;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes fadeing_4 {
   0% {
     opacity: 0;
   }
-  6.25% {
+  16.666666666666668% {
     opacity: 0;
   }
-  12.5% {
+  33.333333333333336% {
     opacity: 0;
   }
-  18.75% {
+  50% {
+    opacity: 1;
+  }
+  66.66666666666667% {
     opacity: 0;
   }
-  25% {
+  83.33333333333333% {
     opacity: 0;
   }
-  31.25% {
+  100% {
     opacity: 0;
   }
-  37.5% {
+}
+#slider__item_5 {
+  background-image: url("../img/img5.jpg");
+  animation-name: fadeing_5;
+}
+@-moz-keyframes fadeing_5 {
+  0% {
     opacity: 0;
   }
-  43.75% {
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
     opacity: 0;
   }
   50% {
     opacity: 0;
   }
-  56.25% {
-    opacity: 0;
-  }
-  62.5% {
-    opacity: 0;
-  }
-  68.75% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  81.25% {
+  66.66666666666667% {
     opacity: 1;
   }
-  87.5% {
+  83.33333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeing_5 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
     opacity: 1;
   }
-  93.75% {
+  83.33333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeing_5 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 1;
+  }
+  83.33333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeing_5 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 1;
+  }
+  83.33333333333333% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#slider__item_6 {
+  background-image: url("../img/img6.jpg");
+  animation-name: fadeing_6;
+}
+@-moz-keyframes fadeing_6 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 0;
+  }
+  83.33333333333333% {
     opacity: 1;
   }
   100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeing_6 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 0;
+  }
+  83.33333333333333% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeing_6 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 0;
+  }
+  83.33333333333333% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeing_6 {
+  0% {
+    opacity: 0;
+  }
+  16.666666666666668% {
+    opacity: 0;
+  }
+  33.333333333333336% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  66.66666666666667% {
+    opacity: 0;
+  }
+  83.33333333333333% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=slider.css.map */
