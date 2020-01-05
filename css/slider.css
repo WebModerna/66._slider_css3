@@ -251,18 +251,27 @@ table {
     margin: 0.65em 0;
   }
 }
+.pie {
+  overflow: hidden;
+  margin: 0;
+  background: #ffc0cb;
+  padding: 1em;
+  text-align: center;
+  width: 100vw;
+}
 .slider__cuerpo {
   box-sizing: border-box;
   margin: 0;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
 }
 .slider__contenedor {
   box-sizing: border-box;
-  margin: 0;
-  position: relative;
   display: flex;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
 }
 .slider__leyenda {
   display: flex;
@@ -271,15 +280,21 @@ table {
   height: 100vh;
 }
 .slider__leyenda__contenido {
-  background: rgba(5,5,5,0.5);
+  background: rgba(5,5,5,0.5) url("../img/webmoderna11.png") left 50% no-repeat;
+  background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   border: 1px solid #ffc0cb;
   color: #ffc0cb;
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
-  line-height: 40px;
+  line-height: 60px;
   padding: 0.5em 1em;
   position: relative;
+  width: 300px;
 /*width w = 150px
 			height h = 40px
 			margin-left -(w / 2)
