@@ -3,6 +3,7 @@
 // Normalizando 
 @import 'normalize'
 @import 'funciones'
+@import 'node_modules/nib/index'
 
 // La cantidad de imágenes a mostrar
 $items = 6
@@ -14,22 +15,23 @@ $tiempo_mostrar = 3
 $tiempo_total = $tiempo_mostrar * $items
 
 
-// El contenedor
+// El cuerpo de la web
 .slider
 	&__cuerpo
 		box-sizing border-box
 		margin 0
 		overflow hidden
 	
+	// El contenedor del Slider
 	&__contenedor
 		box-sizing border-box
-		display flex
 		height 100vh
 		margin 0
 		overflow hidden
 		position relative
 		width 100vw
 	
+	// Un pequeño cuadro con contenido dentro de cada slider
 	&__leyenda
 		display flex
 		justify-content center
@@ -45,42 +47,42 @@ $tiempo_total = $tiempo_mostrar * $items
 			font-weight bold
 			font-style italic
 			line-height 60px
+
 			// Posicionando la leyenda siempre en el centro
 			padding 0.5em 1em
 			position relative
 			width 300px
-			// top 50%
-			// left 50%
-			/*width w = 150px
-			height h = 40px
-			margin-left -(w / 2)
-			margin-top -(h / 2)
-			&:before
-				content ''
-				position absolute
-				right 0
-				top 0
-				triangle(15px, 15px, bottomLeft, pink)
-	*/		
 	
+	// Cada uno de los Sliders
 	&__item
-		animation-delay 0
-		animation-duration $tiempo_total s
-		animation-iteration-count infinite
-		animation-timing-function ease-in-out
 		background-color #fff
 		background-position 50% 50%
 		background-repeat no-repeat
 		background-size(cover)
 		box-sizing border-box
-		display table
 		height 100vh
-		left 0
-		opacity 0
-		position absolute
 		text-align center
-		top 0
 		width 100vw
+
+// Bucle que crea los backgrounds
+for $i in 1..$items
+	div[ data-animacion = slider__item_{$i} ].slider__item
+		background-image url('../img/img' + ($i) + '.jpg')
+		
+
+// Efecto Fadeing
+.contenedor__fadeing
+	display flex
+
+.animacion__fadeing
+	animation-delay 0
+	animation-duration $tiempo_total s
+	animation-iteration-count infinite
+	animation-timing-function ease-in-out
+	display table
+	left 0
+	position absolute
+	top 0
 
 /*
 =========================================
@@ -90,11 +92,11 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
 ========================================
 */
 for $i in 1..$items
-	#slider__item_{$i}
-		background-image url('../img/img' + ($i) + '.jpg')
+	div[ data-animacion = slider__item_{$i} ].animacion__fadeing
 		
 		// El nombre de la animación numerada
 		animation-name fadeing_ + $i
+		opacity 0
 	
 	// En base al orden de cada una de las imágenes
 	@keyframes { fadeing_ + $i }
@@ -113,4 +115,31 @@ for $i in 1..$items
 			else
 				{ 100% * a / $tiempo_total }
 					opacity 0
+// Efecto de carrousel
+.contenedor__carrousel
+	display block
 
+.animacion__carrousel
+	animation-delay 0
+	animation-duration $tiempo_total s
+	animation-iteration-count infinite
+	animation-timing-function ease-in
+	top 0
+	left 0
+	position absolute
+	width 100vw
+
+for $e in 1..$items
+	div[ data-animacion = slider__item_{$e} ].animacion__carrousel
+		animation-name carrousel_ + $e
+		z-index $items - $e
+
+		@keyframes { carrousel_ + $e }
+			for b in 0..$tiempo_total
+				// Para ir creando segmentos de tiempo en los cuales deben mostrarse.
+				if b < $e * $tiempo_mostrar && b >= $e * $tiempo_mostrar - $tiempo_mostrar
+					{ 100% * b / $tiempo_total }
+						transform translate( 100vw )
+/*
+Bucle que crea las animaciones
+*/

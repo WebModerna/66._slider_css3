@@ -27,9 +27,9 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-size: 100%; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 100% /* 1 */;
+  -ms-text-size-adjust: 100% /* 2 */;
+  -webkit-text-size-adjust: 100% /* 2 */;
 }
 html,
 button,
@@ -155,8 +155,8 @@ nav ol {
   list-style-image: none;
 }
 img {
-  border: 0; /* 1 */
-  -ms-interpolation-mode: bicubic; /* 2 */
+  border: 0 /* 1 */;
+  -ms-interpolation-mode: bicubic /* 2 */;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -173,21 +173,19 @@ fieldset {
   padding: 0.35em 0.625em 0.75em;
 }
 legend {
-  border: 0; /* 1 */
+  border: 0 /* 1 */;
   padding: 0;
-  white-space: normal; /* 2 */
-  *margin-left: -7px;
-/* 3 */
+  white-space: normal /* 2 */;
+  *margin-left: -7px /* 3 */;
 }
 button,
 input,
 select,
 textarea {
-  font-size: 100%; /* 1 */
-  margin: 0; /* 2 */
-  vertical-align: baseline; /* 3 */
-  *vertical-align: middle;
-/* 3 */
+  font-size: 100% /* 1 */;
+  margin: 0 /* 2 */;
+  vertical-align: baseline /* 3 */;
+  *vertical-align: middle /* 3 */;
 }
 button,
 input {
@@ -201,10 +199,9 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
-  *overflow: visible;
-/* 4 */
+  -webkit-appearance: button /* 2 */;
+  cursor: pointer /* 3 */;
+  *overflow: visible /* 4 */;
 }
 button[disabled],
 html input[disabled] {
@@ -212,17 +209,15 @@ html input[disabled] {
 }
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-  *height: 13px;
-/* 3 */
-  *width: 13px;
-/* 3 */
+  box-sizing: border-box /* 1 */;
+  padding: 0 /* 2 */;
+  *height: 13px /* 3 */;
+  *width: 13px /* 3 */;
 }
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield /* 1 */;
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-box-sizing: content-box /* 2 */;
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -235,8 +230,8 @@ input::-moz-focus-inner {
   padding: 0;
 }
 textarea {
-  overflow: auto; /* 1 */
-  vertical-align: top; /* 2 */
+  overflow: auto /* 1 */;
+  vertical-align: top /* 2 */;
 }
 table {
   border-collapse: collapse;
@@ -259,14 +254,256 @@ table {
   text-align: center;
   width: 100vw;
 }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100% /* 1 */;
+  -ms-text-size-adjust: 100% /* 2 */;
+  -webkit-text-size-adjust: 100% /* 2 */;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0 /* 1 */;
+  -ms-interpolation-mode: bicubic /* 2 */;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0 /* 1 */;
+  padding: 0;
+  white-space: normal /* 2 */;
+  *margin-left: -7px /* 3 */;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100% /* 1 */;
+  margin: 0 /* 2 */;
+  vertical-align: baseline /* 3 */;
+  *vertical-align: middle /* 3 */;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button /* 2 */;
+  cursor: pointer /* 3 */;
+  *overflow: visible /* 4 */;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box /* 1 */;
+  padding: 0 /* 2 */;
+  *height: 13px /* 3 */;
+  *width: 13px /* 3 */;
+}
+input[type="search"] {
+  -webkit-appearance: textfield /* 1 */;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box /* 2 */;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto /* 1 */;
+  vertical-align: top /* 2 */;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 .slider__cuerpo {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   overflow: hidden;
 }
 .slider__contenedor {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: flex;
   height: 100vh;
   margin: 0;
   overflow: hidden;
@@ -274,18 +511,31 @@ table {
   width: 100vw;
 }
 .slider__leyenda {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
   height: 100vh;
 }
 .slider__leyenda__contenido {
   background: rgba(5,5,5,0.5) url("../img/webmoderna11.png") left 50% no-repeat;
-  background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   border: 1px solid #ffc0cb;
   color: #ffc0cb;
   font-size: 20px;
@@ -295,40 +545,72 @@ table {
   padding: 0.5em 1em;
   position: relative;
   width: 300px;
-/*width w = 150px
-			height h = 40px
-			margin-left -(w / 2)
-			margin-top -(h / 2)
-			&:before
-				content ''
-				position absolute
-				right 0
-				top 0
-				triangle(15px, 15px, bottomLeft, pink)
-	*/
 }
 .slider__item {
-  animation-delay: 0;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
   background-color: #fff;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  -moz-background-size: cover;
   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: table;
   height: 100vh;
-  left: 0;
-  opacity: 0;
-  position: absolute;
   text-align: center;
-  top: 0;
   width: 100vw;
+}
+div[ data-animacion = slider__item_1 ].slider__item {
+  background-image: url("../img/img1.jpg");
+}
+div[ data-animacion = slider__item_2 ].slider__item {
+  background-image: url("../img/img2.jpg");
+}
+div[ data-animacion = slider__item_3 ].slider__item {
+  background-image: url("../img/img3.jpg");
+}
+div[ data-animacion = slider__item_4 ].slider__item {
+  background-image: url("../img/img4.jpg");
+}
+div[ data-animacion = slider__item_5 ].slider__item {
+  background-image: url("../img/img5.jpg");
+}
+div[ data-animacion = slider__item_6 ].slider__item {
+  background-image: url("../img/img6.jpg");
+}
+.contenedor__fadeing {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.animacion__fadeing {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 18s;
+  -moz-animation-duration: 18s;
+  -o-animation-duration: 18s;
+  -ms-animation-duration: 18s;
+  animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 /*
 =========================================
@@ -337,1444 +619,3024 @@ Por fórmula coloca una imagen previamente numerada en la carpeta /img
 Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
 ========================================
 */
-#slider__item_1 {
-  background-image: url("../img/img1.jpg");
+div[ data-animacion = slider__item_1 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_1;
+  -moz-animation-name: fadeing_1;
+  -o-animation-name: fadeing_1;
+  -ms-animation-name: fadeing_1;
   animation-name: fadeing_1;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_1 {
   0% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   5.555555555555555% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   11.11111111111111% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @-webkit-keyframes fadeing_1 {
   0% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   5.555555555555555% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   11.11111111111111% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @-o-keyframes fadeing_1 {
   0% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   5.555555555555555% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   11.11111111111111% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
 @keyframes fadeing_1 {
   0% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   5.555555555555555% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   11.11111111111111% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
 }
-#slider__item_2 {
-  background-image: url("../img/img2.jpg");
+div[ data-animacion = slider__item_2 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_2;
+  -moz-animation-name: fadeing_2;
+  -o-animation-name: fadeing_2;
+  -ms-animation-name: fadeing_2;
   animation-name: fadeing_2;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_2 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   22.22222222222222% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   27.77777777777778% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes fadeing_2 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   22.22222222222222% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   27.77777777777778% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes fadeing_2 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   22.22222222222222% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   27.77777777777778% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes fadeing_2 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   22.22222222222222% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   27.77777777777778% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
-#slider__item_3 {
-  background-image: url("../img/img3.jpg");
+div[ data-animacion = slider__item_3 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_3;
+  -moz-animation-name: fadeing_3;
+  -o-animation-name: fadeing_3;
+  -ms-animation-name: fadeing_3;
   animation-name: fadeing_3;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_3 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   38.888888888888886% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   44.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes fadeing_3 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   38.888888888888886% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   44.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes fadeing_3 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   38.888888888888886% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   44.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes fadeing_3 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   38.888888888888886% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   44.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
-#slider__item_4 {
-  background-image: url("../img/img4.jpg");
+div[ data-animacion = slider__item_4 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_4;
+  -moz-animation-name: fadeing_4;
+  -o-animation-name: fadeing_4;
+  -ms-animation-name: fadeing_4;
   animation-name: fadeing_4;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_4 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   55.55555555555556% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   61.111111111111114% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes fadeing_4 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   55.55555555555556% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   61.111111111111114% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes fadeing_4 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   55.55555555555556% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   61.111111111111114% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes fadeing_4 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   55.55555555555556% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   61.111111111111114% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
-#slider__item_5 {
-  background-image: url("../img/img5.jpg");
+div[ data-animacion = slider__item_5 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_5;
+  -moz-animation-name: fadeing_5;
+  -o-animation-name: fadeing_5;
+  -ms-animation-name: fadeing_5;
   animation-name: fadeing_5;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_5 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   72.22222222222223% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   77.77777777777777% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes fadeing_5 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   72.22222222222223% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   77.77777777777777% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes fadeing_5 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   72.22222222222223% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   77.77777777777777% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes fadeing_5 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   72.22222222222223% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   77.77777777777777% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   83.33333333333333% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   88.88888888888889% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   94.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
-#slider__item_6 {
-  background-image: url("../img/img6.jpg");
+div[ data-animacion = slider__item_6 ].animacion__fadeing {
+  -webkit-animation-name: fadeing_6;
+  -moz-animation-name: fadeing_6;
+  -o-animation-name: fadeing_6;
+  -ms-animation-name: fadeing_6;
   animation-name: fadeing_6;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 @-moz-keyframes fadeing_6 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   88.88888888888889% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   94.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes fadeing_6 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   88.88888888888889% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   94.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes fadeing_6 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   88.88888888888889% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   94.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes fadeing_6 {
   0% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   5.555555555555555% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   11.11111111111111% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   16.666666666666668% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   22.22222222222222% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   27.77777777777778% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   33.333333333333336% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   38.888888888888886% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   44.44444444444444% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   50% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   55.55555555555556% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   61.111111111111114% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   66.66666666666667% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   72.22222222222223% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   77.77777777777777% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
   83.33333333333333% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   88.88888888888889% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   94.44444444444444% {
     opacity: 1;
+    -ms-filter: none;
+    filter: none;
   }
   100% {
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
+.contenedor__carrousel {
+  display: block;
+}
+.animacion__carrousel {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  -ms-animation-delay: 0;
+  animation-delay: 0;
+  -webkit-animation-duration: 18s;
+  -moz-animation-duration: 18s;
+  -o-animation-duration: 18s;
+  -ms-animation-duration: 18s;
+  animation-duration: 18s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  -ms-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100vw;
+}
+div[ data-animacion = slider__item_1 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_1;
+  -moz-animation-name: carrousel_1;
+  -o-animation-name: carrousel_1;
+  -ms-animation-name: carrousel_1;
+  animation-name: carrousel_1;
+  z-index: 5;
+}
+@-moz-keyframes carrousel_1 {
+  0% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  5.555555555555555% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  11.11111111111111% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_1 {
+  0% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  5.555555555555555% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  11.11111111111111% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_1 {
+  0% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  5.555555555555555% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  11.11111111111111% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_1 {
+  0% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  5.555555555555555% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  11.11111111111111% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+div[ data-animacion = slider__item_2 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_2;
+  -moz-animation-name: carrousel_2;
+  -o-animation-name: carrousel_2;
+  -ms-animation-name: carrousel_2;
+  animation-name: carrousel_2;
+  z-index: 4;
+}
+@-moz-keyframes carrousel_2 {
+  16.666666666666668% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  22.22222222222222% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  27.77777777777778% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_2 {
+  16.666666666666668% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  22.22222222222222% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  27.77777777777778% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_2 {
+  16.666666666666668% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  22.22222222222222% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  27.77777777777778% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_2 {
+  16.666666666666668% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  22.22222222222222% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  27.77777777777778% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+div[ data-animacion = slider__item_3 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_3;
+  -moz-animation-name: carrousel_3;
+  -o-animation-name: carrousel_3;
+  -ms-animation-name: carrousel_3;
+  animation-name: carrousel_3;
+  z-index: 3;
+}
+@-moz-keyframes carrousel_3 {
+  33.333333333333336% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  38.888888888888886% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  44.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_3 {
+  33.333333333333336% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  38.888888888888886% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  44.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_3 {
+  33.333333333333336% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  38.888888888888886% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  44.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_3 {
+  33.333333333333336% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  38.888888888888886% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  44.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+div[ data-animacion = slider__item_4 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_4;
+  -moz-animation-name: carrousel_4;
+  -o-animation-name: carrousel_4;
+  -ms-animation-name: carrousel_4;
+  animation-name: carrousel_4;
+  z-index: 2;
+}
+@-moz-keyframes carrousel_4 {
+  50% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  55.55555555555556% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  61.111111111111114% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_4 {
+  50% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  55.55555555555556% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  61.111111111111114% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_4 {
+  50% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  55.55555555555556% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  61.111111111111114% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_4 {
+  50% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  55.55555555555556% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  61.111111111111114% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+div[ data-animacion = slider__item_5 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_5;
+  -moz-animation-name: carrousel_5;
+  -o-animation-name: carrousel_5;
+  -ms-animation-name: carrousel_5;
+  animation-name: carrousel_5;
+  z-index: 1;
+}
+@-moz-keyframes carrousel_5 {
+  66.66666666666667% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  72.22222222222223% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  77.77777777777777% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_5 {
+  66.66666666666667% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  72.22222222222223% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  77.77777777777777% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_5 {
+  66.66666666666667% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  72.22222222222223% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  77.77777777777777% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_5 {
+  66.66666666666667% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  72.22222222222223% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  77.77777777777777% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+div[ data-animacion = slider__item_6 ].animacion__carrousel {
+  -webkit-animation-name: carrousel_6;
+  -moz-animation-name: carrousel_6;
+  -o-animation-name: carrousel_6;
+  -ms-animation-name: carrousel_6;
+  animation-name: carrousel_6;
+  z-index: 0;
+}
+@-moz-keyframes carrousel_6 {
+  83.33333333333333% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  88.88888888888889% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  94.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-webkit-keyframes carrousel_6 {
+  83.33333333333333% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  88.88888888888889% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  94.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@-o-keyframes carrousel_6 {
+  83.33333333333333% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  88.88888888888889% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  94.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+@keyframes carrousel_6 {
+  83.33333333333333% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  88.88888888888889% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+  94.44444444444444% {
+    -webkit-transform: translate(100vw);
+    -moz-transform: translate(100vw);
+    -o-transform: translate(100vw);
+    -ms-transform: translate(100vw);
+    transform: translate(100vw);
+  }
+}
+/*
+Bucle que crea las animaciones
+*/
 /*# sourceMappingURL=slider.css.map */
