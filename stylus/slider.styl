@@ -1,7 +1,7 @@
 // Mi propio slider hecho sólo con CSS
 
 // Normalizando 
-@import 'normalize'
+@import 'normalize.css'
 @import 'funciones'
 @import 'node_modules/nib/index'
 
@@ -39,19 +39,18 @@ $tiempo_total = $tiempo_mostrar * $items
 		height 100vh
 
 		&__contenido
-			background rgba(5,5,5,0.5) url("../img/webmoderna11.png") left 50% no-repeat
-			background-size(cover)
+			background rgba(5,5,5,0.5)
 			border 1px solid pink
+			border-radius 0.5em
+			box-shadow 5px 5px 10px 5px #000
 			color pink
 			font-size 20px
 			font-weight bold
 			font-style italic
-			line-height 60px
-
+			line-height 40px
 			// Posicionando la leyenda siempre en el centro
-			padding 0.5em 1em
+			padding 1em 2em
 			position relative
-			width 300px
 	
 	// Cada uno de los Sliders
 	&__item
@@ -115,6 +114,7 @@ for $i in 1..$items
 			else
 				{ 100% * a / $tiempo_total }
 					opacity 0
+
 // Efecto de carrousel
 .contenedor__carrousel
 	display block
@@ -124,22 +124,32 @@ for $i in 1..$items
 	animation-duration $tiempo_total s
 	animation-iteration-count infinite
 	animation-timing-function ease-in
-	top 0
 	left 0
 	position absolute
+	transform translate(0)
+	top 0
 	width 100vw
+	z-index 2
 
 for $e in 1..$items
-	div[ data-animacion = slider__item_{$e} ].animacion__carrousel
+	div[data-animacion={'"'}slider__item_{$e}{'"'}].animacion__carrousel
 		animation-name carrousel_ + $e
-		z-index $items - $e
 
-		@keyframes { carrousel_ + $e }
+		@keyframes {carrousel_ + $e}
 			for b in 0..$tiempo_total
-				// Para ir creando segmentos de tiempo en los cuales deben mostrarse.
-				if b < $e * $tiempo_mostrar && b >= $e * $tiempo_mostrar - $tiempo_mostrar
+
+				// Fases para mostrar
+				if b <= $e * $tiempo_mostrar && b > $e * $tiempo_mostrar - $tiempo_mostrar
 					{ 100% * b / $tiempo_total }
-						transform translate( 100vw )
-/*
-Bucle que crea las animaciones
-*/
+						transform translate(0)
+						z-index 2
+
+				else if b == $tiempo_total && $e == 1
+					{ 100% * b / $tiempo_total }
+						transform translate(100vw)
+						z-index 1
+				else
+					{ 100% * b / $tiempo_total }
+						transform translate(-100vw)
+						z-index 1
+
