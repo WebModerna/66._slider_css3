@@ -35,6 +35,7 @@ $tiempo_total = $tiempo_mostrar * $items
 	&__contenedor
 		margin 0
 		height 100vh
+		position relative
 		width 100vw
 	
 	// Un pequeño cuadro con contenido dentro de cada slider
@@ -71,6 +72,7 @@ $tiempo_total = $tiempo_mostrar * $items
 for $i in 1..$items
 	div[ data-animacion = slider__item_{$i} ].slider__item
 		background-image url('../img/img' + ($i) + '.jpg')
+		transition 0.2s all ease-in-out
 		
 
 /*
@@ -141,56 +143,50 @@ Los slider primero y último tendrán un movimiento particular al terminar la an
 // Efecto de carrousel
 .contenedor__carrousel
 	display flex
-	overflow-x visible
+	overflow-x scroll
 	overflow-y hidden
-	// overflow hidden
 	scroll-snap-type x mandatory
 	width 100%
 
 .animacion__carrousel
-/*	animation-delay 0
+	animation-delay 0
 	animation-duration $tiempo_total s
 	animation-iteration-count infinite
-	animation-timing-function ease-in-out*/
+	animation-timing-function ease-in-out
+	position relative
 	flex 0 0 100%
 	min-width 100%
 	object-fit cover
 	scroll-snap-align center
-	top 0
 	width 100%
 
+
 for $e in 1..$items
-	div[ data-animacion = { '"' } slider__item_ { $e } { '"' } ].animacion__carrousel
+	div[data-animacion={'"'}slider__item_{$e}{'"'}].animacion__carrousel
 		animation-name carrousel_ + $e
-		
-		// Comprobación para que el último slider vaya a la izquierda
-		if $e == $items
-			$posicion_inicial = -100
-		else 
-			$posicion_inicial = ( $e - 1 ) * 100
+		left 0
 
-		transform translate( $posicion_inicial vw )
-
-			@keyframes {carrousel_ + $e}
-				for b in 0..$tiempo_total
-
-					if b <= $e * $tiempo_mostrar && b > ( $e - 1 ) * $tiempo_mostrar
-						{ 100% * b / $tiempo_total }
-							transform translate(0)
-
-					else
-						{ 100% * b / $tiempo_total }
-							$posicion_final = $posicion_inicial - 100
-							transform translate( $posicion_final vw )
-							
-						
-
-		/*
-				// Fases para mostrar
-				if b <= $e * $tiempo_mostrar && b > ( $e - 1) * $tiempo_mostrar
+		@keyframes { carrousel_ + $e }
+			for b in 0..$tiempo_total
+				if b == 0
 					{ 100% * b / $tiempo_total }
-						transform translate( 0 )
+						left 0
 
+				else if b >= $tiempo_mostrar * ( $e - 1 ) && b < $tiempo_total - $tiempo_mostrar * $e
+					{ 100% * b / $tiempo_total }
+						left $e * (-100) vw
+					
+				/*
+				else if b == $tiempo_total
+					{ 100% * b / $tiempo_total }
+						$posicion_final = 100 - $posicion_inicial
+						left $posicion_final vw
+
+				else if b >= $tiempo_mostrar * ( $e - 1 ) && b < $tiempo_total - $tiempo_mostrar * $e
+					{ 100% * b / $tiempo_total }
+						left 0
+				
 				else
-					$posicion_final = $posicion_inicial - 100
-						transform translate( $posicion_final vw )*/
+					{ 100% * b / $tiempo_total }
+						$posicion_final = 100 - $posicion_inicial
+						left $posicion_final vw*/
