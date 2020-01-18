@@ -10,6 +10,11 @@
 	box-sizing border-box
 	text-align center
 
+// Oculta todas las barras de desplazamiento
+::-webkit-scrollbar
+	display none
+
+
 // La cantidad de imágenes a mostrar
 $items = 4
 
@@ -23,17 +28,13 @@ $tiempo_total = $tiempo_mostrar * $items
 // El cuerpo de la web
 .slider
 	&__cuerpo
-		box-sizing border-box
 		margin 0
 		overflow hidden
 	
 	// El contenedor del Slider
 	&__contenedor
-		box-sizing border-box
-		height 100vh
 		margin 0
-		overflow hidden
-		position relative
+		height 100vh
 		width 100vw
 	
 	// Un pequeño cuadro con contenido dentro de cada slider
@@ -83,6 +84,8 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
 // Efecto Fadeing
 .contenedor__fadeing
 	display flex
+	overflow hidden
+	position relative
 
 .animacion__fadeing
 	animation-delay 0
@@ -130,32 +133,41 @@ Por fórmula coloca una imagen previamente numerada en la carpeta /img
 Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
 El bucle generador de las animaciones es diferente: al primer slider lo tiene que mostar en la posición cero en el primer tramo del tiempo y dejarlo justo en la derecha, antes de que se acabe el tiempo.
 A medida que los segmentos temporales avanzan, uno a uno todos los sliders se irán desplazando a la izquierda de 100vw en 100vw.
-Deben tener la propiedad de poder moverlos con la mano, cursor y touch screen (ideal para móviles)
+Deben tener la propiedad de poder moverlos con la mano, cursor y touch screen (ideal para móviles).
+Los slider primero y último tendrán un movimiento particular al terminar la animación total, justo antes de que comienzen de nuevo.
 ========================================
 */
 
 // Efecto de carrousel
 .contenedor__carrousel
-	display block
+	display flex
+	overflow-x visible
+	overflow-y hidden
+	// overflow hidden
+	scroll-snap-type x mandatory
+	width 100%
 
 .animacion__carrousel
-	animation-delay 0
+/*	animation-delay 0
 	animation-duration $tiempo_total s
 	animation-iteration-count infinite
-	animation-timing-function ease-in-out
-	position absolute
+	animation-timing-function ease-in-out*/
+	flex 0 0 100%
+	min-width 100%
+	object-fit cover
+	scroll-snap-align center
 	top 0
-	width 100vw
+	width 100%
 
 for $e in 1..$items
-	div[data-animacion={'"'}slider__item_{$e}{'"'}].animacion__carrousel
+	div[ data-animacion = { '"' } slider__item_ { $e } { '"' } ].animacion__carrousel
 		animation-name carrousel_ + $e
 		
 		// Comprobación para que el último slider vaya a la izquierda
 		if $e == $items
 			$posicion_inicial = -100
 		else 
-			$posicion_inicial = ($e - 1) * 100
+			$posicion_inicial = ( $e - 1 ) * 100
 
 		transform translate( $posicion_inicial vw )
 

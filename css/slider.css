@@ -261,21 +261,16 @@ table {
   box-sizing: border-box;
   text-align: center;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .slider__cuerpo {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0;
   overflow: hidden;
 }
 .slider__contenedor {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 100vh;
   margin: 0;
-  overflow: hidden;
-  position: relative;
+  height: 100vh;
   width: 100vw;
 }
 .slider__leyenda {
@@ -351,6 +346,8 @@ Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg,
   display: -ms-flexbox;
   display: box;
   display: flex;
+  overflow: hidden;
+  position: relative;
 }
 .animacion__fadeing {
   -webkit-animation-delay: 0;
@@ -1499,38 +1496,37 @@ Por fórmula coloca una imagen previamente numerada en la carpeta /img
 Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
 El bucle generador de las animaciones es diferente: al primer slider lo tiene que mostar en la posición cero en el primer tramo del tiempo y dejarlo justo en la derecha, antes de que se acabe el tiempo.
 A medida que los segmentos temporales avanzan, uno a uno todos los sliders se irán desplazando a la izquierda de 100vw en 100vw.
-Deben tener la propiedad de poder moverlos con la mano, cursor y touch screen (ideal para móviles)
+Deben tener la propiedad de poder moverlos con la mano, cursor y touch screen (ideal para móviles).
+Los slider primero y último tendrán un movimiento particular al terminar la animación total, justo antes de que comienzen de nuevo.
 ========================================
 */
 .contenedor__carrousel {
-  display: block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  overflow-x: visible;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
 }
 .animacion__carrousel {
-  -webkit-animation-delay: 0;
-  -moz-animation-delay: 0;
-  -o-animation-delay: 0;
-  -ms-animation-delay: 0;
-  animation-delay: 0;
-  -webkit-animation-duration: 12s;
-  -moz-animation-duration: 12s;
-  -o-animation-duration: 12s;
-  -ms-animation-duration: 12s;
-  animation-duration: 12s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -o-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  position: absolute;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  min-width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
-div[data-animacion="slider__item_1"].animacion__carrousel {
+div[ data-animacion = " slider__item_ 1 " ].animacion__carrousel {
   -webkit-animation-name: carrousel_1;
   -moz-animation-name: carrousel_1;
   -o-animation-name: carrousel_1;
@@ -1918,7 +1914,7 @@ div[data-animacion="slider__item_1"].animacion__carrousel {
     transform: translate(-100vw);
   }
 }
-div[data-animacion="slider__item_2"].animacion__carrousel {
+div[ data-animacion = " slider__item_ 2 " ].animacion__carrousel {
   -webkit-animation-name: carrousel_2;
   -moz-animation-name: carrousel_2;
   -o-animation-name: carrousel_2;
@@ -2306,7 +2302,7 @@ div[data-animacion="slider__item_2"].animacion__carrousel {
     transform: translate(0vw);
   }
 }
-div[data-animacion="slider__item_3"].animacion__carrousel {
+div[ data-animacion = " slider__item_ 3 " ].animacion__carrousel {
   -webkit-animation-name: carrousel_3;
   -moz-animation-name: carrousel_3;
   -o-animation-name: carrousel_3;
@@ -2694,7 +2690,7 @@ div[data-animacion="slider__item_3"].animacion__carrousel {
     transform: translate(100vw);
   }
 }
-div[data-animacion="slider__item_4"].animacion__carrousel {
+div[ data-animacion = " slider__item_ 4 " ].animacion__carrousel {
   -webkit-animation-name: carrousel_4;
   -moz-animation-name: carrousel_4;
   -o-animation-name: carrousel_4;
