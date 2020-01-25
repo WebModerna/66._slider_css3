@@ -1528,6 +1528,10 @@ Los slider primero y último tendrán un movimiento particular al terminar la an
   display: -ms-flexbox;
   display: box;
   display: flex;
+  -webkit-perspective: preserve3d;
+  -moz-perspective: preserve3d;
+  -ms-perspective: preserve3d;
+  perspective: preserve3d;
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;

@@ -143,6 +143,7 @@ Los slider primero y último tendrán un movimiento particular al terminar la an
 // Efecto de carrousel
 .contenedor__carrousel
 	display flex
+	perspective preserve3d
 	overflow-x scroll
 	overflow-y hidden
 	scroll-snap-type x mandatory
@@ -176,17 +177,3 @@ for $e in 1..$items
 					{ 100% * b / $tiempo_total }
 						left $e * (-100) vw
 					
-				/*
-				else if b == $tiempo_total
-					{ 100% * b / $tiempo_total }
-						$posicion_final = 100 - $posicion_inicial
-						left $posicion_final vw
-
-				else if b >= $tiempo_mostrar * ( $e - 1 ) && b < $tiempo_total - $tiempo_mostrar * $e
-					{ 100% * b / $tiempo_total }
-						left 0
-				
-				else
-					{ 100% * b / $tiempo_total }
-						$posicion_final = 100 - $posicion_inicial
-						left $posicion_final vw*/
