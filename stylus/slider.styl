@@ -1,8 +1,14 @@
 // Mi propio slider hecho sólo con CSS
+/*
+.slideOutLeft
+.animated
+
+*/
 
 // Normalizando 
 @import 'normalize.css'
 @import 'funciones'
+@import 'animate'
 @import 'node_modules/nib/index'
 
 // Para dar un centrado y que todo se contenga en las cajas
@@ -14,16 +20,14 @@
 ::-webkit-scrollbar
 	display none
 
-
 // La cantidad de imágenes a mostrar
-$items = 4
+$items = 6
 
 // El tiempo en el cual una imagen se mostrará
 $tiempo_mostrar = 3
 
 // El tiempo total de todas las animaciones conjunto
 $tiempo_total = $tiempo_mostrar * $items
-
 
 // El cuerpo de la web
 .slider
@@ -68,36 +72,34 @@ $tiempo_total = $tiempo_mostrar * $items
 		text-align center
 		width 100vw
 
-// Bucle que crea los backgrounds
-for $i in 1..$items
-	div[ data-animacion = slider__item_{$i} ].slider__item
-		background-image url('../img/img' + ($i) + '.jpg')
-		transition 0.2s all ease-in-out
-		
-
-/*
-=========================================
-Bucle: crea los nombres de las animaciones
-Por fórmula coloca una imagen previamente numerada en la carpeta /img
-Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-========================================
-*/
-
 // Efecto Fadeing
 .contenedor__fadeing
 	display flex
 	overflow hidden
 	position relative
 
-.animacion__fadeing
-	animation-delay 0
-	animation-duration $tiempo_total s
-	animation-iteration-count infinite
-	animation-timing-function ease-in-out
+.animated
+// .animacion__fadeing
+// 	animation-delay 0
+// 	animation-duration $tiempo_total s
+// 	animation-iteration-count infinite
+// 	animation-timing-function ease-in-out
 	display table
 	left 0
 	position absolute
 	top 0
+
+// Bucle para agregar los z-index
+for $i in 1..$items
+	div[ data-animacion = slider__item_{$i} ].animacion__carrousel
+		z-index ($items - $i + 1)	
+
+// Bucle que crea los backgrounds
+for $i in 1..$items
+	div[ data-animacion = slider__item_{$i} ].slider__item
+		background-image url('../img/img' + ($i) + '.jpg')
+		transition 0.2s all ease-in-out	
+/*
 
 // Desarrollo del Bucle
 for $i in 1..$items
@@ -125,55 +127,4 @@ for $i in 1..$items
 				{ 100% * a / $tiempo_total }
 					opacity 0
 
-
-/*
-=========================================
-El CARROUSEL.
-Tiene la misma generación de las imágnes, pero su funcionamiento es diferente.
-Bucle: crea los nombres de las animaciones
-Por fórmula coloca una imagen previamente numerada en la carpeta /img
-Las imágenes deben llamarse "img[número de orden].jpg". Por ejemplo: img1.jpg, img2.jpg, y así sucesivamente.
-El bucle generador de las animaciones es diferente: al primer slider lo tiene que mostar en la posición cero en el primer tramo del tiempo y dejarlo justo en la derecha, antes de que se acabe el tiempo.
-A medida que los segmentos temporales avanzan, uno a uno todos los sliders se irán desplazando a la izquierda de 100vw en 100vw.
-Deben tener la propiedad de poder moverlos con la mano, cursor y touch screen (ideal para móviles).
-Los slider primero y último tendrán un movimiento particular al terminar la animación total, justo antes de que comienzen de nuevo.
-========================================
 */
-
-// Efecto de carrousel
-.contenedor__carrousel
-	display flex
-	perspective preserve3d
-	overflow-x scroll
-	overflow-y hidden
-	scroll-snap-type x mandatory
-	width 100%
-
-.animacion__carrousel
-	animation-delay 0
-	animation-duration $tiempo_total s
-	animation-iteration-count infinite
-	animation-timing-function ease-in-out
-	position relative
-	flex 0 0 100%
-	min-width 100%
-	object-fit cover
-	scroll-snap-align center
-	width 100%
-
-
-for $e in 1..$items
-	div[data-animacion={'"'}slider__item_{$e}{'"'}].animacion__carrousel
-		animation-name carrousel_ + $e
-		left 0
-
-		@keyframes { carrousel_ + $e }
-			for b in 0..$tiempo_total
-				if b == 0
-					{ 100% * b / $tiempo_total }
-						left 0
-
-				else if b >= $tiempo_mostrar * ( $e - 1 ) && b < $tiempo_total - $tiempo_mostrar * $e
-					{ 100% * b / $tiempo_total }
-						left $e * (-100) vw
-					
