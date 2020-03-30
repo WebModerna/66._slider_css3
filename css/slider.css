@@ -1526,6 +1526,9 @@
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+.zoomInBig {
+  animation-name: zoomInBig;
+}
 @-moz-keyframes bounce {
   0%, 20%, 53%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -6190,6 +6193,46 @@
     transform: translateY(-100%);
   }
 }
+@-moz-keyframes zoomInBig {
+  0% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes zoomInBig {
+  0% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-o-keyframes zoomInBig {
+  0% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes zoomInBig {
+  0% {
+    opacity: 0;
+    transform: scale3d(3, 3, 3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
 article,
 aside,
 details,
@@ -6445,6 +6488,7 @@ table {
 .slider__contenedor {
   margin: 0;
   height: 100vh;
+  overflow: hidden;
   position: relative;
   width: 100vw;
 }
